@@ -1,0 +1,14 @@
+<div>
+  <h1>Upcoming Events</h1>
+  <hr />
+  <div class="row">
+    <div class="col-md-5" *ngFor="let event of events">
+      <event-thumbnail #thumbnail [event]="event"></event-thumbnail>
+      <!-- (click)="handleToastEvent(event.name)" 
+        <button (click)="thumbnail.logFoo()">Log Foo</button>
+      <h4>{{ thumbnail.someProperty }}</h4> -->
+    </div>
+  </div>
+</div>
+
+<!-- (eventClick)="handleEventClicked($event)" -->
